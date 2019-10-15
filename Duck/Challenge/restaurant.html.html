@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link href="https://fonts.googleapis.com/css?family=Homemade+Apple|Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Burger House</title>
+</head>
+<style>
+    .t1 {
+      font-size: 24px;
+      font-family: 'Homemade Apple', cursive;
+      /* font-family:  'Chivo', sans-serif; */
+      color: black;
+      letter-spacing: 1px;
+      font-weight: bold;
+      padding-left: 30px;
+      
+    }
+
+    .t2 {
+      font-size: 24px;
+      font-family: 'Homemade Apple', cursive;
+      letter-spacing: 1px;
+      font-weight: bold;
+      height: 100;
+      background: #DC4B1F;
+      border-radius: 50%;
+      padding: 5px;
+    }
+
+    .jumbotron {
+      background-image: url("jumbo.jpg");
+      background-size: cover;
+      background-position: center;
+      height: 650px;
+      background-repeat: no-repeat;
+    }
+
+    .text-color {
+      color: black ;
+    }
+
+    .flex {
+      display: flex;
+      justify-content: space-between;
+    }
+
+  </style>
+
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark text-white">
+            <a class="text-white" href="index.html" title=""><span class="t1 text-white">Burger</span><span class="t2"> House</span></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Burgers
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Paris Burger</a>
+                            <a class="dropdown-item" href="#">London Burger</a>
+                            <a class="dropdown-item" href="#">Roma Burger</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Smoothies
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Japan Smoothie</a>
+                            <a class="dropdown-item" href="#">Vietnam Smoothie</a>
+                            <a class="dropdown-item" href="#">China Smoothie</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Sandwiches
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">California Sandwich</a>
+                            <a class="dropdown-item" href="#">New York Sandwich</a>
+                            <a class="dropdown-item" href="#">Chicago Sandwich</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="jumbotron jumbotron-fluid text-center" id="abc">
+            <div class="container">
+                <h1 class="display-4 font-weight-bold">Welcome!</h1>
+                <p class="lead font-weight-bold">Find the Best Burgers in Town</p>
+            </div>
+        </div>
+        <!-- Cards -->
+        <div class="card-group mb-4">
+            <div class="card mx-1 border ">
+                <img src="burger.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Best Burgers</h5>
+                    <!-- Burger Karte -->
+                    <div id="burger">
+                    </div>
+                </div>
+            </div>
+        
+        <div class="card mx-1 border">
+            <img src="smoothie.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Best Smoothies</h5>
+
+                  <div id = "smoothie">
+                  </div>
+            </div>
+        </div>
+
+        <div class="card mx-1 border">
+            <img src="sandwich.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Best Sandwiches</h5>
+                <div id = "sandwich">
+                  </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div>
+        <div class="p-3 mb-2 bg-dark text-white"><a class="text-white" href="index.html" title=""><span class="t1 text-white">Burger</span><span class="t2"> House</span></a></div>
+    </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <script src="restaurant.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
